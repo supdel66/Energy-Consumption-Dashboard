@@ -1,0 +1,28 @@
+# Energy Consumption Web App Requirements
+
+# Web Framework
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Machine Learning
+xgboost>=1.7.0
+scikit-learn>=1.3.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# HTTP Client
+requests>=2.31.0
+
+# Scheduler
+apscheduler>=3.10.0
+
+# Template Engine
+jinja2>=3.1.0
+
+# Static Files Support (included with FastAPI)
+aiofiles>=23.0.0
+
+# Simulator (Flask)
+flask>=2.3.0
