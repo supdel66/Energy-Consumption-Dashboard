@@ -536,11 +536,14 @@
                 ],
             },
             options: {
-                responsive: true,
+                responsive: false,
                 interaction: { intersect: false, mode: "index" },
                 scales: {
                     x: { ticks: { maxTicksAuto: 12, maxRotation: 45 } },
-                    y: { title: { display: true, text: "kWh" } },
+                    y: { title: { display: true, text: "kWh" },
+                        min: 0,
+                        max: 1.5
+                    }, // Assuming the typical range of the data},
                 },
                 plugins: { legend: { position: "top" } },
             },

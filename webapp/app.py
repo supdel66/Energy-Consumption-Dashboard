@@ -29,7 +29,7 @@ from sessions import start_scheduler, stop_scheduler
 app = FastAPI(title="Energy Consumption Dashboard")
 
 # Mount static files
-app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
+# app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
 
 # Include routes
 app.include_router(router)
