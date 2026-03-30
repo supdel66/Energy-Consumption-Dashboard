@@ -250,6 +250,8 @@ def send_to_backend(meter_id: str):
         # Get prediction log
         pred_log = get_recent_predictions(meter_id, limit=100)
 
+    
+
         # Get next 24h predictions
         predictions_24h = predict_next_hours(meter_id, session["sim_time"], 24)
 
@@ -264,8 +266,8 @@ def send_to_backend(meter_id: str):
             "meter_id": meter_id,
             #"sim_time": session["sim_time"], 
             #"tick_count": session["tick_count"], 
-            #"last_true_kwh": session["last_true_kwh"], 
-            #"last_predicted_kwh": session["last_predicted_kwh"], 
+            "consumption_kw": session["last_true_kwh"], 
+            "last_predicted_kwh": session["last_predicted_kwh"], 
             #"last_error": session["last_error"],
             #"model_version": session["model_version"],
             #"new_data_since_retrain": session["new_data_since_retrain"],
