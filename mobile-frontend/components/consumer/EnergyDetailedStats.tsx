@@ -1,6 +1,6 @@
 'use client';
 
-import { Zap, Sun, Wind, Droplets, Gauge, TrendingUp, MapPin, Clock } from 'lucide-react';
+import { Zap, Wind, Droplets, Gauge, TrendingUp, MapPin, Clock } from 'lucide-react';
 
 interface StatItemProps {
     icon: React.ReactNode;
@@ -86,7 +86,7 @@ export default function EnergyDetailedStats({ currentLoad }: EnergyDetailedStats
 
             {/* Efficiency */}
             <StatItem
-                icon={<Sun className="w-4 h-4" />}
+                icon={<Zap className="w-4 h-4" />}
                 label="EFFICIENCY"
                 value={`${efficiency}%`}
                 subtitle="vs target"
