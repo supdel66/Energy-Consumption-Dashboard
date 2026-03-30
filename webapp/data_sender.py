@@ -16,8 +16,8 @@ def send_to_backend(meter_id: str):
         session = get_session(meter_id)
 
         if not session:
-            logger.error(f"Session not found for meter_id: {meter_id}")
-            return
+            print(f"Session not found for meter_id: {meter_id}")
+            
 
         # Get prediction log
         pred_log = get_recent_predictions(meter_id, limit=100)
@@ -49,4 +49,4 @@ def send_to_backend(meter_id: str):
             "predictions_week": predictions_week, 
         })
         if resp.status_code != 200:
-            logger.error(f"Failed to send data to backend: {resp.text}")      
+            print(f"Failed to send data to backend: {resp.text}")      
