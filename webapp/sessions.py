@@ -263,7 +263,8 @@ def send_to_backend(meter_id: str):
     errors = [p["error"] for p in pred_log if p["error"] is not None]
     avg_error = round(np.mean(errors), 6) if errors else None
     mae = avg_error  # Mean Absolute Error
-    resp = requests.post(BACKEND_URL_METERS, json={
+    try:
+        resp = requests.post(BACKEND_URL_METERS, json={
         "meter_id": meter_id,
         #"sim_time": session["sim_time"], 
         #"tick_count": session["tick_count"], 
@@ -278,7 +279,10 @@ def send_to_backend(meter_id: str):
         #"prediction_log": pred_log,
         "predictions_24h": predictions_24h,
         "predictions_week": predictions_week, 
-    })
+    }, timeout=3)
+    except requests.RequestException as exc:
+        logger.warning(f"Failed to send data to backend for {meter_id}: {exc}")
+        return
     if resp.status_code != 200:
         print(f"Failed to send data to backend: {resp.text}")   
     else:

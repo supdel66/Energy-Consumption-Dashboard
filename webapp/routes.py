@@ -14,8 +14,6 @@ from sessions import (
     setup_user, start_user_scheduler, stop_user_scheduler,
     get_session, get_all_sessions
 )
-from sessions import send_to_backend
-
 import os
 
 # Templates setup
@@ -54,8 +52,6 @@ async def login(request: Request):
 
     # Get next 24h predictions
     predictions_24h = predict_next_hours(meter_id, session["sim_time"], 24)
-    send_to_backend(meter_id)  # Send initial data to backend
-
     return JSONResponse({
         "status": "ok",
         "meter_id": meter_id,
