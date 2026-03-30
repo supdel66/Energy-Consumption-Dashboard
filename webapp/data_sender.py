@@ -49,4 +49,6 @@ def send_to_backend(meter_id: str):
             "predictions_week": predictions_week, 
         })
         if resp.status_code != 200:
-            print(f"Failed to send data to backend: {resp.text}")      
+            print(f"Failed to send data to backend: {resp.text}")   
+        else:
+            print(f"Data sent to backend for meter_id: {meter_id}")   
