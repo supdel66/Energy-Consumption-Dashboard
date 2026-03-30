@@ -7,7 +7,10 @@ import HourlyForecast from '@/components/consumer/HourlyForecast';
 import AddMeterModal from '@/components/consumer/AddMeterModal';
 import WeeklyConsumptionChart from '@/components/consumer/WeeklyConsumptionChart';
 import DailyEnergyForecast from '@/components/consumer/DailyEnergyForecast';
+import WeeklyEnergyForecast from '@/components/consumer/WeeklyEnergyForecast';
 import EnergyMetricsGrid from '@/components/consumer/EnergyMetricsGrid';
+import PredictionLogTable from '@/components/consumer/PredictionLogTable';
+import ErrorOverTimeChart from '@/components/consumer/ErrorOverTimeChart';
 
 interface DashboardData {
     meter_id: string;
@@ -23,6 +26,7 @@ interface DashboardData {
     mae: number | null;
     prediction_log: any[];
     predictions_24h: any[];
+    predictions_week: any[];
 }
 
 export default function ConsumerPage() {
@@ -43,6 +47,21 @@ export default function ConsumerPage() {
                 if (res.ok) {
                     const data = await res.json();
                     if (!data.error) {
+                        const filterMidnight = (arr: any[]) => arr ? arr.filter((p: any) => {
+                            if (!p || !p.timestamp) return true;
+                            const timePart = p.timestamp.split(' ')[1];
+                            return !(timePart && timePart.startsWith('00:00'));
+                        }) : [];
+
+                        if (data.predictions_24h) data.predictions_24h = filterMidnight(data.predictions_24h);
+                        if (data.predictions_week) data.predictions_week = filterMidnight(data.predictions_week);
+                        if (data.prediction_log) data.prediction_log = filterMidnight(data.prediction_log);
+
+                        if (data.sim_time && data.sim_time.split(' ')[1]?.startsWith('00:00')) {
+                            data.last_predicted_kwh = null;
+                            data.last_error = null;
+                        }
+
                         setDashboardData(data);
                         setIsReconnecting(false);
                     }
@@ -127,6 +146,8 @@ export default function ConsumerPage() {
                 <ConsumptionHeader
                     location={meterId || "No Meter"}
                     currentLoad={dashboardData?.last_true_kwh ?? 0}
+                    predictedLoad={dashboardData?.last_predicted_kwh ?? null}
+                    status={dashboardData?.status ?? null}
                     highTemp={29}
                     lowTemp={15}
                 />
@@ -154,8 +175,23 @@ export default function ConsumerPage() {
                 </div>
 
                 {/* Daily Forecast */}
-                <div className="px-4 mt-6 pb-8">
+                <div className="px-4 mt-6">
                     <DailyEnergyForecast data={dashboardData?.predictions_24h || []} />
+                </div>
+
+                {/* Weekly Forecast */}
+                <div className="px-4 mt-6">
+                    <WeeklyEnergyForecast data={dashboardData?.predictions_week || []} />
+                </div>
+
+                {/* Error Over Time Chart */}
+                <div className="px-4 mt-6">
+                    <ErrorOverTimeChart data={dashboardData?.prediction_log || []} />
+                </div>
+
+                {/* Prediction Log Table */}
+                <div className="px-4 mt-6 pb-8">
+                    <PredictionLogTable data={dashboardData?.prediction_log || []} />
                 </div>
             </div>
 

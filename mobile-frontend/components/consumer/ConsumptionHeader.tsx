@@ -5,6 +5,8 @@ import { Leaf } from 'lucide-react';
 interface ConsumptionHeaderProps {
     location: string;
     currentLoad: number;
+    predictedLoad: number | null;
+    status: string | null;
     highTemp: number;
     lowTemp: number;
 }
@@ -12,35 +14,46 @@ interface ConsumptionHeaderProps {
 export default function ConsumptionHeader({ 
     location, 
     currentLoad, 
+    predictedLoad,
+    status,
     highTemp, 
     lowTemp 
 }: ConsumptionHeaderProps) {
 
-    // Usually between 0 and 1.5 in this simulator
     const isSaving = currentLoad < 0.5;
 
     return (
         <div className="text-center px-6">
-            {/* Location */}
-            <div className="flex items-center justify-center gap-2 mb-2">
-                <h1 className="text-2xl font-light">{location || 'Not Connected'}</h1>
-                {location && (
-                    <div className="flex items-center gap-1 text-white/60 text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                        <div className="w-3 h-3 text-green-500">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
-                            </svg>
+            {/* Location and Status */}
+            <div className="flex flex-col items-center justify-center gap-1 mb-8 mt-2">
+                <div className="flex items-center gap-3">
+                    <h1 className="text-2xl font-light">{location || 'Not Connected'}</h1>
+                    {location && (
+                        <div className="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/10">
+                            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                            <span className="text-[10px] text-white/80 uppercase tracking-widest">{status || 'ACTIVE'}</span>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
 
-            {/* Current Load */}
-            <div className="text-8xl font-thin mb-2 tracking-tight">
-                {currentLoad !== undefined && currentLoad !== null ? currentLoad.toFixed(4) : "—"}
+            {/* Consumption vs Predicted */}
+            <div className="flex justify-center items-end gap-8 mb-2">
+                <div className="text-center">
+                   <div className="text-white/60 text-xs mb-1 uppercase tracking-widest">True</div>
+                   <div className="text-6xl sm:text-7xl font-thin tracking-tight text-cyan-400">
+                       {currentLoad !== undefined && currentLoad !== null ? currentLoad.toFixed(4) : "—"}
+                   </div>
+                </div>
+                <div className="w-px h-16 bg-white/10 mb-2"></div>
+                <div className="text-center">
+                   <div className="text-white/60 text-xs mb-1 uppercase tracking-widest">Predicted</div>
+                   <div className="text-6xl sm:text-7xl font-thin tracking-tight text-purple-400">
+                       {predictedLoad !== undefined && predictedLoad !== null ? predictedLoad.toFixed(4) : "—"}
+                   </div>
+                </div>
             </div>
-            <div className="text-2xl text-white/60 font-light -mt-2 mb-4">
+            <div className="text-xl text-white/60 font-light mb-6">
                 kWh
             </div>
 
