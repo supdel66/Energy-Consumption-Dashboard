@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_MODEL_PATH = os.path.join(BASE_DIR, "base", "model.pkl")
 BASE_DATA_PATH = os.path.join(BASE_DIR, "base", "data.csv")
 USER_DATA_DIR = os.path.join(BASE_DIR, "user_data")
-
+BACKEND_URL_METERS = "http://localhost:8000/meter_update"
 # ──────────────────────────────────────────────
 # API Configuration
 # ──────────────────────────────────────────────

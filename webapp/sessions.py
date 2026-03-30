@@ -8,16 +8,18 @@ import shutil
 import threading
 from datetime import timedelta
 
+
 import pandas as pd
 import requests
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from config import (
-    USER_DATA_DIR, BASE_MODEL_PATH, SIMULATOR_URL,
+    BACKEND_URL_METERS, USER_DATA_DIR, BASE_MODEL_PATH, SIMULATOR_URL, BACKEND_URL_METERS,
     TICK_INTERVAL_SECONDS, RETRAIN_THRESHOLD, logger
 )
 from database import get_model_path, init_user_db, insert_consumption
 from models import load_user_model, predict_with_user_model, retrain_user_model
+from data_sender import send_to_backend
 
 
 # ──────────────────────────────────────────────
@@ -118,6 +120,7 @@ def hourly_tick(meter_id: str):
     # 3. Store in DB
     if true_kwh is not None:
         insert_consumption(meter_id, sim_time, meter_values, true_kwh, predicted_kwh)
+        send_to_backend(meter_id)
 
     # 4. Update session
     error = None
@@ -231,3 +234,5 @@ def start_scheduler():
 def stop_scheduler():
     """Stop the background scheduler."""
     scheduler.shutdown()
+
+
