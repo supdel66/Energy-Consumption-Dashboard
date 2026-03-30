@@ -14,7 +14,7 @@ import requests
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from config import (
-    BACKEND_URL_METERS, USER_DATA_DIR, BASE_MODEL_PATH, SIMULATOR_URL, BACKEND_URL_METERS,
+    BACKEND_URL_METERS, USER_DATA_DIR, BASE_MODEL_PATH, SIMULATOR_URL,
     TICK_INTERVAL_SECONDS, RETRAIN_THRESHOLD, logger
 )
 from database import get_model_path, init_user_db, insert_consumption
@@ -245,6 +245,7 @@ def send_to_backend(meter_id: str):
 
     if not session:
         print(f"Session not found for meter_id: {meter_id}")
+        return
         
 
     # Get prediction log
@@ -262,7 +263,7 @@ def send_to_backend(meter_id: str):
     errors = [p["error"] for p in pred_log if p["error"] is not None]
     avg_error = round(np.mean(errors), 6) if errors else None
     mae = avg_error  # Mean Absolute Error
-    resp = requests.post("http://localhost:8000/meter_update", json={
+    resp = requests.post(BACKEND_URL_METERS, json={
         "meter_id": meter_id,
         #"sim_time": session["sim_time"], 
         #"tick_count": session["tick_count"], 

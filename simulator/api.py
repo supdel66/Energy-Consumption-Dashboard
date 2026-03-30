@@ -14,7 +14,7 @@ app = Flask(__name__)
 # ──────────────────────────────────────────────
 # Single model store: loaded once at startup
 # ──────────────────────────────────────────────
-MODEL_DIR = os.path.join(os.path.dirname(__file__), "saved_models")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 _model = None
 _model_info = {}
 
@@ -22,7 +22,7 @@ _model_info = {}
 def _load_first_model():
     """Load model.pkl from the same directory."""
     global _model, _model_info
-    fpath = os.path.join("model.pkl")
+    fpath = os.path.join(BASE_DIR, "model.pkl")
     with open(fpath, "rb") as f:
         info = pickle.load(f)
     _model = info["model"]
@@ -145,4 +145,5 @@ def health():
 if __name__ == "__main__":
     print("Loading first model…")
     _load_first_model()
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    sim_port = int(os.getenv("SIM_PORT", "5000"))
+    app.run(host="0.0.0.0", port=sim_port, debug=False)

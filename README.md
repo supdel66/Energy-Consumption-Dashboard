@@ -74,6 +74,15 @@ pip install -r requirements.txt
 
 ## Running the Application
 
+### Recommended: Single command run
+```bash
+chmod +x run.sh
+./run.sh
+```
+This starts both services together and keeps them running in one terminal.
+
+### Manual mode
+
 ### 1. Start the Simulator (required)
 ```bash
 cd simulator
