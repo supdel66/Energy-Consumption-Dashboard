@@ -410,7 +410,7 @@
         btn.innerHTML = '<span class="loader"></span> Connecting...';
 
         try {
-            const resp = await fetch(`${API}/api/login`, {
+            const resp = await fetch(`${API}/api/login`, { // This will trigger the /api/login which will setup the user basic stuff.
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ meter_id: input }),
