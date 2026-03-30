@@ -1,0 +1,1695 @@
+INFO:     Started server process [1357628]
+INFO:     Waiting for application startup.
+INFO:apscheduler.scheduler:Scheduler started
+INFO:webapp:Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:34118 - "GET / HTTP/1.1" 200 OK
+INFO:apscheduler.scheduler:Added job "hourly_tick" to job store "default"
+INFO:webapp:Started scheduler for M001 (every 15s)
+INFO:     127.0.0.1:57832 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:06 +0545)" (scheduled at 2026-03-30 21:33:06.881130+05:45)
+INFO:webapp:[M001] Tick #1 at 2025-05-08 12:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55980 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.475174, Predicted=0.527382, Error=0.052208
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:36 +0545)" (scheduled at 2026-03-30 21:33:21.881130+05:45)
+INFO:webapp:[M001] Tick #2 at 2025-05-08 13:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33408 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.464098, Predicted=0.527382, Error=0.063284
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:51 +0545)" (scheduled at 2026-03-30 21:33:36.881130+05:45)
+INFO:webapp:[M001] Tick #3 at 2025-05-08 14:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47454 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.427741, Predicted=0.529676, Error=0.101935
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:33:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:06 +0545)" (scheduled at 2026-03-30 21:33:51.881130+05:45)
+INFO:webapp:[M001] Tick #4 at 2025-05-08 15:00:00
+INFO:     127.0.0.1:40488 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.409116, Predicted=0.529676, Error=0.12056
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:21 +0545)" (scheduled at 2026-03-30 21:34:06.881130+05:45)
+INFO:webapp:[M001] Tick #5 at 2025-05-08 16:00:00
+INFO:     127.0.0.1:43652 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.491415, Predicted=0.529676, Error=0.038261
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:36 +0545)" (scheduled at 2026-03-30 21:34:21.881130+05:45)
+INFO:webapp:[M001] Tick #6 at 2025-05-08 17:00:00
+INFO:     127.0.0.1:55102 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6951 rows
+INFO:webapp:[M001] Model retrained (v1)
+INFO:webapp:[M001] True=0.579883, Predicted=0.529676, Error=0.050207
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:51 +0545)" (scheduled at 2026-03-30 21:34:36.881130+05:45)
+INFO:webapp:[M001] Tick #7 at 2025-05-08 18:00:00
+INFO:     127.0.0.1:36080 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.745851, Predicted=0.56975, Error=0.176101
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:34:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:06 +0545)" (scheduled at 2026-03-30 21:34:51.881130+05:45)
+INFO:webapp:[M001] Tick #8 at 2025-05-08 19:00:00
+INFO:     127.0.0.1:42204 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.752008, Predicted=0.56975, Error=0.182258
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:21 +0545)" (scheduled at 2026-03-30 21:35:06.881130+05:45)
+INFO:webapp:[M001] Tick #9 at 2025-05-08 20:00:00
+INFO:     127.0.0.1:44786 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.701392, Predicted=0.56975, Error=0.131642
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:36 +0545)" (scheduled at 2026-03-30 21:35:21.881130+05:45)
+INFO:webapp:[M001] Tick #10 at 2025-05-08 21:00:00
+INFO:     127.0.0.1:42542 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.611701, Predicted=0.569511, Error=0.04219
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:51 +0545)" (scheduled at 2026-03-30 21:35:36.881130+05:45)
+INFO:webapp:[M001] Tick #11 at 2025-05-08 22:00:00
+INFO:     127.0.0.1:49288 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.485255, Predicted=0.569511, Error=0.084256
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:35:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:06 +0545)" (scheduled at 2026-03-30 21:35:51.881130+05:45)
+INFO:webapp:[M001] Tick #12 at 2025-05-08 23:00:00
+INFO:     127.0.0.1:46158 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6957 rows
+INFO:webapp:[M001] Model retrained (v2)
+INFO:webapp:[M001] True=0.463879, Predicted=0.568631, Error=0.104752
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:21 +0545)" (scheduled at 2026-03-30 21:36:06.881130+05:45)
+INFO:webapp:[M001] Tick #13 at 2025-05-09 00:00:00
+INFO:     127.0.0.1:51198 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.659913, Predicted=1.123307, Error=0.463394
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:36 +0545)" (scheduled at 2026-03-30 21:36:21.881130+05:45)
+INFO:webapp:[M001] Tick #14 at 2025-05-09 01:00:00
+INFO:     127.0.0.1:39994 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.555466, Predicted=0.468803, Error=0.086663
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:51 +0545)" (scheduled at 2026-03-30 21:36:36.881130+05:45)
+INFO:webapp:[M001] Tick #15 at 2025-05-09 02:00:00
+INFO:     127.0.0.1:40924 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.437299, Predicted=0.468803, Error=0.031504
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:36:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:06 +0545)" (scheduled at 2026-03-30 21:36:51.881130+05:45)
+INFO:webapp:[M001] Tick #16 at 2025-05-09 03:00:00
+INFO:     127.0.0.1:46900 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.462839, Predicted=0.468803, Error=0.005964
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:21 +0545)" (scheduled at 2026-03-30 21:37:06.881130+05:45)
+INFO:webapp:[M001] Tick #17 at 2025-05-09 04:00:00
+INFO:     127.0.0.1:44032 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.588637, Predicted=0.468803, Error=0.119834
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:36 +0545)" (scheduled at 2026-03-30 21:37:21.881130+05:45)
+INFO:webapp:[M001] Tick #18 at 2025-05-09 05:00:00
+INFO:     127.0.0.1:51090 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6963 rows
+INFO:webapp:[M001] Model retrained (v3)
+INFO:webapp:[M001] True=0.55838, Predicted=0.468803, Error=0.089577
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:51 +0545)" (scheduled at 2026-03-30 21:37:36.881130+05:45)
+INFO:webapp:[M001] Tick #19 at 2025-05-09 06:00:00
+INFO:     127.0.0.1:54512 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.56228, Predicted=0.555773, Error=0.006507
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:37:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:06 +0545)" (scheduled at 2026-03-30 21:37:51.881130+05:45)
+INFO:webapp:[M001] Tick #20 at 2025-05-09 07:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38036 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.604755, Predicted=0.554702, Error=0.050053
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:21 +0545)" (scheduled at 2026-03-30 21:38:06.881130+05:45)
+INFO:webapp:[M001] Tick #21 at 2025-05-09 08:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50766 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.613942, Predicted=0.554702, Error=0.05924
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:36 +0545)" (scheduled at 2026-03-30 21:38:21.881130+05:45)
+INFO:webapp:[M001] Tick #22 at 2025-05-09 09:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39380 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.553492, Predicted=0.554166, Error=0.000674
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:51 +0545)" (scheduled at 2026-03-30 21:38:36.881130+05:45)
+INFO:webapp:[M001] Tick #23 at 2025-05-09 10:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40272 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.604743, Predicted=0.554166, Error=0.050577
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:38:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:06 +0545)" (scheduled at 2026-03-30 21:38:51.881130+05:45)
+INFO:webapp:[M001] Tick #24 at 2025-05-09 11:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42840 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6969 rows
+INFO:webapp:[M001] Model retrained (v4)
+INFO:webapp:[M001] True=0.624956, Predicted=0.554166, Error=0.07079
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:21 +0545)" (scheduled at 2026-03-30 21:39:06.881130+05:45)
+INFO:webapp:[M001] Tick #25 at 2025-05-09 12:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55136 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.552788, Predicted=0.605184, Error=0.052396
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:36 +0545)" (scheduled at 2026-03-30 21:39:21.881130+05:45)
+INFO:webapp:[M001] Tick #26 at 2025-05-09 13:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60936 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.455881, Predicted=0.605184, Error=0.149303
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:51 +0545)" (scheduled at 2026-03-30 21:39:36.881130+05:45)
+INFO:webapp:[M001] Tick #27 at 2025-05-09 14:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51258 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.48413, Predicted=0.605184, Error=0.121054
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:39:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:06 +0545)" (scheduled at 2026-03-30 21:39:51.881130+05:45)
+INFO:webapp:[M001] Tick #28 at 2025-05-09 15:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60362 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.489511, Predicted=0.605184, Error=0.115673
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:21 +0545)" (scheduled at 2026-03-30 21:40:06.881130+05:45)
+INFO:webapp:[M001] Tick #29 at 2025-05-09 16:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57094 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.440427, Predicted=0.606023, Error=0.165596
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:36 +0545)" (scheduled at 2026-03-30 21:40:21.881130+05:45)
+INFO:webapp:[M001] Tick #30 at 2025-05-09 17:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43452 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6975 rows
+INFO:webapp:[M001] Model retrained (v5)
+INFO:webapp:[M001] True=0.604171, Predicted=0.606023, Error=0.001852
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:51 +0545)" (scheduled at 2026-03-30 21:40:36.881130+05:45)
+INFO:webapp:[M001] Tick #31 at 2025-05-09 18:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45210 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.779515, Predicted=0.595838, Error=0.183677
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:40:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:06 +0545)" (scheduled at 2026-03-30 21:40:51.881130+05:45)
+INFO:webapp:[M001] Tick #32 at 2025-05-09 19:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43394 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.747887, Predicted=0.595838, Error=0.152049
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:21 +0545)" (scheduled at 2026-03-30 21:41:06.881130+05:45)
+INFO:webapp:[M001] Tick #33 at 2025-05-09 20:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56984 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.703772, Predicted=0.595838, Error=0.107934
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:36 +0545)" (scheduled at 2026-03-30 21:41:21.881130+05:45)
+INFO:webapp:[M001] Tick #34 at 2025-05-09 21:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55854 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.634662, Predicted=0.595657, Error=0.039005
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:51 +0545)" (scheduled at 2026-03-30 21:41:36.881130+05:45)
+INFO:webapp:[M001] Tick #35 at 2025-05-09 22:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45138 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.518801, Predicted=0.595657, Error=0.076856
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:41:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:06 +0545)" (scheduled at 2026-03-30 21:41:51.881130+05:45)
+INFO:webapp:[M001] Tick #36 at 2025-05-09 23:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53670 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6981 rows
+INFO:webapp:[M001] Model retrained (v6)
+INFO:webapp:[M001] True=0.431824, Predicted=0.595657, Error=0.163833
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:21 +0545)" (scheduled at 2026-03-30 21:42:06.881130+05:45)
+INFO:webapp:[M001] Tick #37 at 2025-05-10 00:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57236 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.689579, Predicted=1.036773, Error=0.347194
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:36 +0545)" (scheduled at 2026-03-30 21:42:21.881130+05:45)
+INFO:webapp:[M001] Tick #38 at 2025-05-10 01:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33290 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.546517, Predicted=0.438397, Error=0.10812
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:51 +0545)" (scheduled at 2026-03-30 21:42:36.881130+05:45)
+INFO:webapp:[M001] Tick #39 at 2025-05-10 02:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48184 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.475541, Predicted=0.438635, Error=0.036906
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:42:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:06 +0545)" (scheduled at 2026-03-30 21:42:51.881130+05:45)
+INFO:webapp:[M001] Tick #40 at 2025-05-10 03:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46970 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.468527, Predicted=0.438635, Error=0.029892
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:21 +0545)" (scheduled at 2026-03-30 21:43:06.881130+05:45)
+INFO:webapp:[M001] Tick #41 at 2025-05-10 04:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51990 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.598066, Predicted=0.438635, Error=0.159431
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:36 +0545)" (scheduled at 2026-03-30 21:43:21.881130+05:45)
+INFO:webapp:[M001] Tick #42 at 2025-05-10 05:00:00
+INFO:     127.0.0.1:58096 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6987 rows
+INFO:webapp:[M001] Model retrained (v7)
+INFO:webapp:[M001] True=0.530736, Predicted=0.438635, Error=0.092101
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:51 +0545)" (scheduled at 2026-03-30 21:43:36.881130+05:45)
+INFO:webapp:[M001] Tick #43 at 2025-05-10 06:00:00
+INFO:     127.0.0.1:40096 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.616143, Predicted=0.532227, Error=0.083916
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:43:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:06 +0545)" (scheduled at 2026-03-30 21:43:51.881130+05:45)
+INFO:webapp:[M001] Tick #44 at 2025-05-10 07:00:00
+INFO:     127.0.0.1:49278 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.630598, Predicted=0.531163, Error=0.099435
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:21 +0545)" (scheduled at 2026-03-30 21:44:06.881130+05:45)
+INFO:webapp:[M001] Tick #45 at 2025-05-10 08:00:00
+INFO:     127.0.0.1:51592 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.630056, Predicted=0.531163, Error=0.098893
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:36 +0545)" (scheduled at 2026-03-30 21:44:21.881130+05:45)
+INFO:webapp:[M001] Tick #46 at 2025-05-10 09:00:00
+INFO:     127.0.0.1:53964 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.603146, Predicted=0.530757, Error=0.072389
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:51 +0545)" (scheduled at 2026-03-30 21:44:36.881130+05:45)
+INFO:webapp:[M001] Tick #47 at 2025-05-10 10:00:00
+INFO:     127.0.0.1:36486 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.701013, Predicted=0.530757, Error=0.170256
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:44:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:06 +0545)" (scheduled at 2026-03-30 21:44:51.881130+05:45)
+INFO:webapp:[M001] Tick #48 at 2025-05-10 11:00:00
+INFO:     127.0.0.1:59258 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6993 rows
+INFO:webapp:[M001] Model retrained (v8)
+INFO:webapp:[M001] True=0.627107, Predicted=0.530757, Error=0.09635
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:21 +0545)" (scheduled at 2026-03-30 21:45:06.881130+05:45)
+INFO:webapp:[M001] Tick #49 at 2025-05-10 12:00:00
+INFO:     127.0.0.1:49400 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.5487, Predicted=0.605544, Error=0.056844
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:36 +0545)" (scheduled at 2026-03-30 21:45:21.881130+05:45)
+INFO:webapp:[M001] Tick #50 at 2025-05-10 13:00:00
+INFO:     127.0.0.1:55316 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.494394, Predicted=0.605544, Error=0.11115
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:51 +0545)" (scheduled at 2026-03-30 21:45:36.881130+05:45)
+INFO:webapp:[M001] Tick #51 at 2025-05-10 14:00:00
+INFO:     127.0.0.1:46600 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.476651, Predicted=0.605544, Error=0.128893
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:45:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:06 +0545)" (scheduled at 2026-03-30 21:45:51.881130+05:45)
+INFO:webapp:[M001] Tick #52 at 2025-05-10 15:00:00
+INFO:     127.0.0.1:57964 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.444119, Predicted=0.605544, Error=0.161425
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:21 +0545)" (scheduled at 2026-03-30 21:46:06.881130+05:45)
+INFO:webapp:[M001] Tick #53 at 2025-05-10 16:00:00
+INFO:     127.0.0.1:45562 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.448493, Predicted=0.606187, Error=0.157694
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:36 +0545)" (scheduled at 2026-03-30 21:46:21.881130+05:45)
+INFO:webapp:[M001] Tick #54 at 2025-05-10 17:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53446 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 6999 rows
+INFO:webapp:[M001] Model retrained (v9)
+INFO:webapp:[M001] True=0.566533, Predicted=0.606187, Error=0.039654
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:51 +0545)" (scheduled at 2026-03-30 21:46:36.881130+05:45)
+INFO:webapp:[M001] Tick #55 at 2025-05-10 18:00:00
+INFO:     127.0.0.1:43496 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.780433, Predicted=0.558895, Error=0.221538
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:46:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:06 +0545)" (scheduled at 2026-03-30 21:46:51.881130+05:45)
+INFO:webapp:[M001] Tick #56 at 2025-05-10 19:00:00
+INFO:     127.0.0.1:54288 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.744557, Predicted=0.564446, Error=0.180111
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:21 +0545)" (scheduled at 2026-03-30 21:47:06.881130+05:45)
+INFO:webapp:[M001] Tick #57 at 2025-05-10 20:00:00
+INFO:     127.0.0.1:45326 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.663968, Predicted=0.564446, Error=0.099522
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:36 +0545)" (scheduled at 2026-03-30 21:47:21.881130+05:45)
+INFO:webapp:[M001] Tick #58 at 2025-05-10 21:00:00
+INFO:     127.0.0.1:33514 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.635405, Predicted=0.564246, Error=0.071159
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:51 +0545)" (scheduled at 2026-03-30 21:47:36.881130+05:45)
+INFO:webapp:[M001] Tick #59 at 2025-05-10 22:00:00
+INFO:     127.0.0.1:59898 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.563595, Predicted=0.564246, Error=0.000651
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:47:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:06 +0545)" (scheduled at 2026-03-30 21:47:51.881130+05:45)
+INFO:webapp:[M001] Tick #60 at 2025-05-10 23:00:00
+INFO:     127.0.0.1:43914 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7005 rows
+INFO:webapp:[M001] Model retrained (v10)
+INFO:webapp:[M001] True=0.411161, Predicted=0.564246, Error=0.153085
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:21 +0545)" (scheduled at 2026-03-30 21:48:06.881130+05:45)
+INFO:webapp:[M001] Tick #61 at 2025-05-11 00:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52878 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.758993, Predicted=-108.166275, Error=108.925268
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:36 +0545)" (scheduled at 2026-03-30 21:48:21.881130+05:45)
+INFO:webapp:[M001] Tick #62 at 2025-05-11 01:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45062 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.530046, Predicted=0.417376, Error=0.11267
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:51 +0545)" (scheduled at 2026-03-30 21:48:36.881130+05:45)
+INFO:webapp:[M001] Tick #63 at 2025-05-11 02:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55980 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.452273, Predicted=0.417376, Error=0.034897
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:48:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:06 +0545)" (scheduled at 2026-03-30 21:48:51.881130+05:45)
+INFO:webapp:[M001] Tick #64 at 2025-05-11 03:00:00
+INFO:     127.0.0.1:40384 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.466493, Predicted=0.417376, Error=0.049117
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:21 +0545)" (scheduled at 2026-03-30 21:49:06.881130+05:45)
+INFO:webapp:[M001] Tick #65 at 2025-05-11 04:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51822 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.507995, Predicted=0.417376, Error=0.090619
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:36 +0545)" (scheduled at 2026-03-30 21:49:21.881130+05:45)
+INFO:webapp:[M001] Tick #66 at 2025-05-11 05:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36066 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7011 rows
+INFO:webapp:[M001] Model retrained (v11)
+INFO:webapp:[M001] True=0.560319, Predicted=0.417376, Error=0.142943
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:51 +0545)" (scheduled at 2026-03-30 21:49:36.881130+05:45)
+INFO:webapp:[M001] Tick #67 at 2025-05-11 06:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34504 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.564862, Predicted=0.558342, Error=0.00652
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:49:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:06 +0545)" (scheduled at 2026-03-30 21:49:51.881130+05:45)
+INFO:webapp:[M001] Tick #68 at 2025-05-11 07:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44410 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.635854, Predicted=0.557492, Error=0.078362
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:21 +0545)" (scheduled at 2026-03-30 21:50:06.881130+05:45)
+INFO:webapp:[M001] Tick #69 at 2025-05-11 08:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47524 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.65007, Predicted=0.557492, Error=0.092578
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:36 +0545)" (scheduled at 2026-03-30 21:50:21.881130+05:45)
+INFO:webapp:[M001] Tick #70 at 2025-05-11 09:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58308 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.603541, Predicted=0.556263, Error=0.047278
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:51 +0545)" (scheduled at 2026-03-30 21:50:36.881130+05:45)
+INFO:webapp:[M001] Tick #71 at 2025-05-11 10:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51306 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.625444, Predicted=0.556263, Error=0.069181
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:50:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:06 +0545)" (scheduled at 2026-03-30 21:50:51.881130+05:45)
+INFO:webapp:[M001] Tick #72 at 2025-05-11 11:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50518 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7017 rows
+INFO:webapp:[M001] Model retrained (v12)
+INFO:webapp:[M001] True=0.598695, Predicted=0.553409, Error=0.045286
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:21 +0545)" (scheduled at 2026-03-30 21:51:06.881130+05:45)
+INFO:webapp:[M001] Tick #73 at 2025-05-11 12:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58018 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.532677, Predicted=0.592884, Error=0.060207
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:36 +0545)" (scheduled at 2026-03-30 21:51:21.881130+05:45)
+INFO:webapp:[M001] Tick #74 at 2025-05-11 13:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32984 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.430438, Predicted=0.592884, Error=0.162446
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:51 +0545)" (scheduled at 2026-03-30 21:51:36.881130+05:45)
+INFO:webapp:[M001] Tick #75 at 2025-05-11 14:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37166 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.419217, Predicted=0.592884, Error=0.173667
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:51:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:06 +0545)" (scheduled at 2026-03-30 21:51:51.881130+05:45)
+INFO:webapp:[M001] Tick #76 at 2025-05-11 15:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55906 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.455056, Predicted=0.592884, Error=0.137828
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:21 +0545)" (scheduled at 2026-03-30 21:52:06.881130+05:45)
+INFO:webapp:[M001] Tick #77 at 2025-05-11 16:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42390 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.48683, Predicted=0.593158, Error=0.106328
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:36 +0545)" (scheduled at 2026-03-30 21:52:21.881130+05:45)
+INFO:webapp:[M001] Tick #78 at 2025-05-11 17:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55670 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7023 rows
+INFO:webapp:[M001] Model retrained (v13)
+INFO:webapp:[M001] True=0.58173, Predicted=0.593158, Error=0.011428
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:51 +0545)" (scheduled at 2026-03-30 21:52:36.881130+05:45)
+INFO:webapp:[M001] Tick #79 at 2025-05-11 18:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60466 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.757188, Predicted=0.579547, Error=0.177641
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:52:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:06 +0545)" (scheduled at 2026-03-30 21:52:51.881130+05:45)
+INFO:webapp:[M001] Tick #80 at 2025-05-11 19:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46170 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.772793, Predicted=0.579547, Error=0.193246
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:21 +0545)" (scheduled at 2026-03-30 21:53:06.881130+05:45)
+INFO:webapp:[M001] Tick #81 at 2025-05-11 20:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49314 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.740348, Predicted=0.579547, Error=0.160801
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:36 +0545)" (scheduled at 2026-03-30 21:53:21.881130+05:45)
+INFO:webapp:[M001] Tick #82 at 2025-05-11 21:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55088 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.646948, Predicted=0.578565, Error=0.068383
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:51 +0545)" (scheduled at 2026-03-30 21:53:36.881130+05:45)
+INFO:webapp:[M001] Tick #83 at 2025-05-11 22:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55796 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.584083, Predicted=0.578565, Error=0.005518
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:53:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:06 +0545)" (scheduled at 2026-03-30 21:53:51.881130+05:45)
+INFO:webapp:[M001] Tick #84 at 2025-05-11 23:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50300 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7029 rows
+INFO:webapp:[M001] Model retrained (v14)
+INFO:webapp:[M001] True=0.453568, Predicted=0.578565, Error=0.124997
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:21 +0545)" (scheduled at 2026-03-30 21:54:06.881130+05:45)
+INFO:webapp:[M001] Tick #85 at 2025-05-12 00:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35154 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.914776, Predicted=-47.534801, Error=48.449577
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:36 +0545)" (scheduled at 2026-03-30 21:54:21.881130+05:45)
+INFO:webapp:[M001] Tick #86 at 2025-05-12 01:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54720 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.469796, Predicted=0.45257, Error=0.017226
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:51 +0545)" (scheduled at 2026-03-30 21:54:36.881130+05:45)
+INFO:webapp:[M001] Tick #87 at 2025-05-12 02:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46238 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.483112, Predicted=0.45257, Error=0.030542
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:54:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:06 +0545)" (scheduled at 2026-03-30 21:54:51.881130+05:45)
+INFO:webapp:[M001] Tick #88 at 2025-05-12 03:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37616 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.441338, Predicted=0.45257, Error=0.011232
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:21 +0545)" (scheduled at 2026-03-30 21:55:06.881130+05:45)
+INFO:webapp:[M001] Tick #89 at 2025-05-12 04:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44904 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.55764, Predicted=0.45257, Error=0.10507
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:36 +0545)" (scheduled at 2026-03-30 21:55:21.881130+05:45)
+INFO:webapp:[M001] Tick #90 at 2025-05-12 05:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46788 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7035 rows
+INFO:webapp:[M001] Model retrained (v15)
+INFO:webapp:[M001] True=0.522354, Predicted=0.454351, Error=0.068003
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:51 +0545)" (scheduled at 2026-03-30 21:55:36.881130+05:45)
+INFO:webapp:[M001] Tick #91 at 2025-05-12 06:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50178 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.518554, Predicted=0.516281, Error=0.002273
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:55:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:06 +0545)" (scheduled at 2026-03-30 21:55:51.881130+05:45)
+INFO:webapp:[M001] Tick #92 at 2025-05-12 07:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54010 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.60374, Predicted=0.514968, Error=0.088772
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:21 +0545)" (scheduled at 2026-03-30 21:56:06.881130+05:45)
+INFO:webapp:[M001] Tick #93 at 2025-05-12 08:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59044 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.607673, Predicted=0.514968, Error=0.092705
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:36 +0545)" (scheduled at 2026-03-30 21:56:21.881130+05:45)
+INFO:webapp:[M001] Tick #94 at 2025-05-12 09:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43380 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.509694, Predicted=0.514728, Error=0.005034
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:51 +0545)" (scheduled at 2026-03-30 21:56:36.881130+05:45)
+INFO:webapp:[M001] Tick #95 at 2025-05-12 10:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44974 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.534613, Predicted=0.514728, Error=0.019885
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:56:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:06 +0545)" (scheduled at 2026-03-30 21:56:51.881130+05:45)
+INFO:webapp:[M001] Tick #96 at 2025-05-12 11:00:00
+INFO:     127.0.0.1:57326 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7041 rows
+INFO:webapp:[M001] Model retrained (v16)
+INFO:webapp:[M001] True=0.575221, Predicted=0.514728, Error=0.060493
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:21 +0545)" (scheduled at 2026-03-30 21:57:06.881130+05:45)
+INFO:webapp:[M001] Tick #97 at 2025-05-12 12:00:00
+INFO:     127.0.0.1:58070 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.467306, Predicted=0.566336, Error=0.09903
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:36 +0545)" (scheduled at 2026-03-30 21:57:21.881130+05:45)
+INFO:webapp:[M001] Tick #98 at 2025-05-12 13:00:00
+INFO:     127.0.0.1:44122 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.431682, Predicted=0.566336, Error=0.134654
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:51 +0545)" (scheduled at 2026-03-30 21:57:36.881130+05:45)
+INFO:webapp:[M001] Tick #99 at 2025-05-12 14:00:00
+INFO:     127.0.0.1:43134 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.420047, Predicted=0.566336, Error=0.146289
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:57:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:06 +0545)" (scheduled at 2026-03-30 21:57:51.881130+05:45)
+INFO:webapp:[M001] Tick #100 at 2025-05-12 15:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40044 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.401323, Predicted=0.566336, Error=0.165013
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:21 +0545)" (scheduled at 2026-03-30 21:58:06.881130+05:45)
+INFO:webapp:[M001] Tick #101 at 2025-05-12 16:00:00
+INFO:     127.0.0.1:34620 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.478034, Predicted=0.566725, Error=0.088691
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:36 +0545)" (scheduled at 2026-03-30 21:58:21.881130+05:45)
+INFO:webapp:[M001] Tick #102 at 2025-05-12 17:00:00
+INFO:     127.0.0.1:48546 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7047 rows
+INFO:webapp:[M001] Model retrained (v17)
+INFO:webapp:[M001] True=0.495631, Predicted=0.566824, Error=0.071193
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:51 +0545)" (scheduled at 2026-03-30 21:58:36.881130+05:45)
+INFO:webapp:[M001] Tick #103 at 2025-05-12 18:00:00
+INFO:     127.0.0.1:43666 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.774258, Predicted=0.494993, Error=0.279265
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:58:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:06 +0545)" (scheduled at 2026-03-30 21:58:51.881130+05:45)
+INFO:webapp:[M001] Tick #104 at 2025-05-12 19:00:00
+INFO:     127.0.0.1:32882 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.699062, Predicted=0.494993, Error=0.204069
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:21 +0545)" (scheduled at 2026-03-30 21:59:06.881130+05:45)
+INFO:webapp:[M001] Tick #105 at 2025-05-12 20:00:00
+INFO:     127.0.0.1:40774 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.651832, Predicted=0.494993, Error=0.156839
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:36 +0545)" (scheduled at 2026-03-30 21:59:21.881130+05:45)
+INFO:webapp:[M001] Tick #106 at 2025-05-12 21:00:00
+INFO:     127.0.0.1:49312 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.601739, Predicted=0.494993, Error=0.106746
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:51 +0545)" (scheduled at 2026-03-30 21:59:36.881130+05:45)
+INFO:webapp:[M001] Tick #107 at 2025-05-12 22:00:00
+INFO:     127.0.0.1:42786 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.519847, Predicted=0.494993, Error=0.024854
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 21:59:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:06 +0545)" (scheduled at 2026-03-30 21:59:51.881130+05:45)
+INFO:webapp:[M001] Tick #108 at 2025-05-12 23:00:00
+INFO:     127.0.0.1:57928 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7053 rows
+INFO:webapp:[M001] Model retrained (v18)
+INFO:webapp:[M001] True=0.41066, Predicted=0.494993, Error=0.084333
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:21 +0545)" (scheduled at 2026-03-30 22:00:06.881130+05:45)
+INFO:webapp:[M001] Tick #109 at 2025-05-13 00:00:00
+INFO:     127.0.0.1:51902 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.818273, Predicted=-87.824318, Error=88.642591
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:36 +0545)" (scheduled at 2026-03-30 22:00:21.881130+05:45)
+INFO:webapp:[M001] Tick #110 at 2025-05-13 01:00:00
+INFO:     127.0.0.1:34024 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.543021, Predicted=0.415, Error=0.128021
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:51 +0545)" (scheduled at 2026-03-30 22:00:36.881130+05:45)
+INFO:webapp:[M001] Tick #111 at 2025-05-13 02:00:00
+INFO:     127.0.0.1:50624 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.491344, Predicted=0.415, Error=0.076344
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:00:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:06 +0545)" (scheduled at 2026-03-30 22:00:51.881130+05:45)
+INFO:webapp:[M001] Tick #112 at 2025-05-13 03:00:00
+INFO:     127.0.0.1:37560 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.514758, Predicted=0.415, Error=0.099758
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:21 +0545)" (scheduled at 2026-03-30 22:01:06.881130+05:45)
+INFO:webapp:[M001] Tick #113 at 2025-05-13 04:00:00
+INFO:     127.0.0.1:56072 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.51875, Predicted=0.415, Error=0.10375
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:36 +0545)" (scheduled at 2026-03-30 22:01:21.881130+05:45)
+INFO:webapp:[M001] Tick #114 at 2025-05-13 05:00:00
+INFO:     127.0.0.1:46334 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7059 rows
+INFO:webapp:[M001] Model retrained (v19)
+INFO:webapp:[M001] True=0.545406, Predicted=0.415, Error=0.130406
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:51 +0545)" (scheduled at 2026-03-30 22:01:36.881130+05:45)
+INFO:webapp:[M001] Tick #115 at 2025-05-13 06:00:00
+INFO:     127.0.0.1:58014 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.522347, Predicted=0.549562, Error=0.027215
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:01:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:06 +0545)" (scheduled at 2026-03-30 22:01:51.881130+05:45)
+INFO:webapp:[M001] Tick #116 at 2025-05-13 07:00:00
+INFO:     127.0.0.1:45764 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.559835, Predicted=0.548362, Error=0.011473
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:21 +0545)" (scheduled at 2026-03-30 22:02:06.881130+05:45)
+INFO:webapp:[M001] Tick #117 at 2025-05-13 08:00:00
+INFO:     127.0.0.1:37468 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.589846, Predicted=0.548362, Error=0.041484
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:36 +0545)" (scheduled at 2026-03-30 22:02:21.881130+05:45)
+INFO:webapp:[M001] Tick #118 at 2025-05-13 09:00:00
+INFO:     127.0.0.1:35120 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.542682, Predicted=0.548339, Error=0.005657
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:51 +0545)" (scheduled at 2026-03-30 22:02:36.881130+05:45)
+INFO:webapp:[M001] Tick #119 at 2025-05-13 10:00:00
+INFO:     127.0.0.1:43540 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.534929, Predicted=0.548339, Error=0.01341
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:02:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:06 +0545)" (scheduled at 2026-03-30 22:02:51.881130+05:45)
+INFO:webapp:[M001] Tick #120 at 2025-05-13 11:00:00
+INFO:     127.0.0.1:60548 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7065 rows
+INFO:webapp:[M001] Model retrained (v20)
+INFO:webapp:[M001] True=0.552904, Predicted=0.548339, Error=0.004565
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:21 +0545)" (scheduled at 2026-03-30 22:03:06.881130+05:45)
+INFO:webapp:[M001] Tick #121 at 2025-05-13 12:00:00
+INFO:     127.0.0.1:45188 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.499183, Predicted=0.555726, Error=0.056543
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:36 +0545)" (scheduled at 2026-03-30 22:03:21.881130+05:45)
+INFO:webapp:[M001] Tick #122 at 2025-05-13 13:00:00
+INFO:     127.0.0.1:44522 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.50575, Predicted=0.554308, Error=0.048558
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:51 +0545)" (scheduled at 2026-03-30 22:03:36.881130+05:45)
+INFO:webapp:[M001] Tick #123 at 2025-05-13 14:00:00
+INFO:     127.0.0.1:36726 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.466821, Predicted=0.555229, Error=0.088408
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:03:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:06 +0545)" (scheduled at 2026-03-30 22:03:51.881130+05:45)
+INFO:webapp:[M001] Tick #124 at 2025-05-13 15:00:00
+INFO:     127.0.0.1:45146 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.452239, Predicted=0.555229, Error=0.10299
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:21 +0545)" (scheduled at 2026-03-30 22:04:06.881130+05:45)
+INFO:webapp:[M001] Tick #125 at 2025-05-13 16:00:00
+INFO:     127.0.0.1:60836 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.4597, Predicted=0.555229, Error=0.095529
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:36 +0545)" (scheduled at 2026-03-30 22:04:21.881130+05:45)
+INFO:webapp:[M001] Tick #126 at 2025-05-13 17:00:00
+INFO:     127.0.0.1:48988 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7071 rows
+INFO:webapp:[M001] Model retrained (v21)
+INFO:webapp:[M001] True=0.51398, Predicted=0.555229, Error=0.041249
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:51 +0545)" (scheduled at 2026-03-30 22:04:36.881130+05:45)
+INFO:webapp:[M001] Tick #127 at 2025-05-13 18:00:00
+INFO:     127.0.0.1:51460 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.779408, Predicted=0.514823, Error=0.264585
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:04:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:06 +0545)" (scheduled at 2026-03-30 22:04:51.881130+05:45)
+INFO:webapp:[M001] Tick #128 at 2025-05-13 19:00:00
+INFO:     127.0.0.1:38550 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.702602, Predicted=0.514823, Error=0.187779
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:21 +0545)" (scheduled at 2026-03-30 22:05:06.881130+05:45)
+INFO:webapp:[M001] Tick #129 at 2025-05-13 20:00:00
+INFO:     127.0.0.1:38212 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.671964, Predicted=0.514823, Error=0.157141
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:36 +0545)" (scheduled at 2026-03-30 22:05:21.881130+05:45)
+INFO:webapp:[M001] Tick #130 at 2025-05-13 21:00:00
+INFO:     127.0.0.1:53916 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.609122, Predicted=0.514738, Error=0.094384
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:51 +0545)" (scheduled at 2026-03-30 22:05:36.881130+05:45)
+INFO:webapp:[M001] Tick #131 at 2025-05-13 22:00:00
+INFO:     127.0.0.1:39120 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.477089, Predicted=0.514738, Error=0.037649
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:05:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:06 +0545)" (scheduled at 2026-03-30 22:05:51.881130+05:45)
+INFO:webapp:[M001] Tick #132 at 2025-05-13 23:00:00
+INFO:     127.0.0.1:59892 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7077 rows
+INFO:webapp:[M001] Model retrained (v22)
+INFO:webapp:[M001] True=0.449779, Predicted=0.514738, Error=0.064959
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:21 +0545)" (scheduled at 2026-03-30 22:06:06.881130+05:45)
+INFO:webapp:[M001] Tick #133 at 2025-05-14 00:00:00
+INFO:     127.0.0.1:54764 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.551623, Predicted=-111.657166, Error=112.208789
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:36 +0545)" (scheduled at 2026-03-30 22:06:21.881130+05:45)
+INFO:webapp:[M001] Tick #134 at 2025-05-14 01:00:00
+INFO:     127.0.0.1:45042 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.499662, Predicted=0.454111, Error=0.045551
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:51 +0545)" (scheduled at 2026-03-30 22:06:36.881130+05:45)
+INFO:webapp:[M001] Tick #135 at 2025-05-14 02:00:00
+INFO:     127.0.0.1:49670 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.422193, Predicted=0.45448, Error=0.032287
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:06:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:06 +0545)" (scheduled at 2026-03-30 22:06:51.881130+05:45)
+INFO:webapp:[M001] Tick #136 at 2025-05-14 03:00:00
+INFO:     127.0.0.1:34900 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.408566, Predicted=0.45448, Error=0.045914
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:21 +0545)" (scheduled at 2026-03-30 22:07:06.881130+05:45)
+INFO:webapp:[M001] Tick #137 at 2025-05-14 04:00:00
+INFO:     127.0.0.1:54038 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.479099, Predicted=0.45448, Error=0.024619
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:36 +0545)" (scheduled at 2026-03-30 22:07:21.881130+05:45)
+INFO:webapp:[M001] Tick #138 at 2025-05-14 05:00:00
+INFO:     127.0.0.1:47748 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7083 rows
+INFO:webapp:[M001] Model retrained (v23)
+INFO:webapp:[M001] True=0.505887, Predicted=0.45448, Error=0.051407
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:51 +0545)" (scheduled at 2026-03-30 22:07:36.881130+05:45)
+INFO:webapp:[M001] Tick #139 at 2025-05-14 06:00:00
+INFO:     127.0.0.1:53268 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.560517, Predicted=0.503991, Error=0.056526
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:07:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:06 +0545)" (scheduled at 2026-03-30 22:07:51.881130+05:45)
+INFO:webapp:[M001] Tick #140 at 2025-05-14 07:00:00
+INFO:     127.0.0.1:56758 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.561976, Predicted=0.503991, Error=0.057985
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:21 +0545)" (scheduled at 2026-03-30 22:08:06.881130+05:45)
+INFO:webapp:[M001] Tick #141 at 2025-05-14 08:00:00
+INFO:     127.0.0.1:33194 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.566985, Predicted=0.503991, Error=0.062994
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:36 +0545)" (scheduled at 2026-03-30 22:08:21.881130+05:45)
+INFO:webapp:[M001] Tick #142 at 2025-05-14 09:00:00
+INFO:     127.0.0.1:36430 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.532338, Predicted=0.503771, Error=0.028567
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:51 +0545)" (scheduled at 2026-03-30 22:08:36.881130+05:45)
+INFO:webapp:[M001] Tick #143 at 2025-05-14 10:00:00
+INFO:     127.0.0.1:46932 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.535743, Predicted=0.503771, Error=0.031972
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:08:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:06 +0545)" (scheduled at 2026-03-30 22:08:51.881130+05:45)
+INFO:webapp:[M001] Tick #144 at 2025-05-14 11:00:00
+INFO:     127.0.0.1:36356 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7089 rows
+INFO:webapp:[M001] Model retrained (v24)
+INFO:webapp:[M001] True=0.524312, Predicted=0.503517, Error=0.020795
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:21 +0545)" (scheduled at 2026-03-30 22:09:06.881130+05:45)
+INFO:webapp:[M001] Tick #145 at 2025-05-14 12:00:00
+INFO:     127.0.0.1:50886 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.487736, Predicted=0.513571, Error=0.025835
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:36 +0545)" (scheduled at 2026-03-30 22:09:21.881130+05:45)
+INFO:webapp:[M001] Tick #146 at 2025-05-14 13:00:00
+INFO:     127.0.0.1:47900 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.396733, Predicted=0.513571, Error=0.116838
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:51 +0545)" (scheduled at 2026-03-30 22:09:36.881130+05:45)
+INFO:webapp:[M001] Tick #147 at 2025-05-14 14:00:00
+INFO:     127.0.0.1:39426 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.412425, Predicted=0.513571, Error=0.101146
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:09:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:06 +0545)" (scheduled at 2026-03-30 22:09:51.881130+05:45)
+INFO:webapp:[M001] Tick #148 at 2025-05-14 15:00:00
+INFO:     127.0.0.1:51762 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.439661, Predicted=0.514022, Error=0.074361
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:21 +0545)" (scheduled at 2026-03-30 22:10:06.881130+05:45)
+INFO:webapp:[M001] Tick #149 at 2025-05-14 16:00:00
+INFO:     127.0.0.1:50600 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.402628, Predicted=0.514504, Error=0.111876
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:36 +0545)" (scheduled at 2026-03-30 22:10:21.881130+05:45)
+INFO:webapp:[M001] Tick #150 at 2025-05-14 17:00:00
+INFO:     127.0.0.1:42138 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7095 rows
+INFO:webapp:[M001] Model retrained (v25)
+INFO:webapp:[M001] True=0.509128, Predicted=0.514504, Error=0.005376
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:51 +0545)" (scheduled at 2026-03-30 22:10:36.881130+05:45)
+INFO:webapp:[M001] Tick #151 at 2025-05-14 18:00:00
+INFO:     127.0.0.1:55720 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.699845, Predicted=0.50431, Error=0.195535
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:10:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:06 +0545)" (scheduled at 2026-03-30 22:10:51.881130+05:45)
+INFO:webapp:[M001] Tick #152 at 2025-05-14 19:00:00
+INFO:     127.0.0.1:55588 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.698533, Predicted=0.50431, Error=0.194223
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:21 +0545)" (scheduled at 2026-03-30 22:11:06.881130+05:45)
+INFO:webapp:[M001] Tick #153 at 2025-05-14 20:00:00
+INFO:     127.0.0.1:40020 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.623541, Predicted=0.50431, Error=0.119231
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:36 +0545)" (scheduled at 2026-03-30 22:11:21.881130+05:45)
+INFO:webapp:[M001] Tick #154 at 2025-05-14 21:00:00
+INFO:     127.0.0.1:60926 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.542291, Predicted=0.50431, Error=0.037981
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:51 +0545)" (scheduled at 2026-03-30 22:11:36.881130+05:45)
+INFO:webapp:[M001] Tick #155 at 2025-05-14 22:00:00
+INFO:     127.0.0.1:58960 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.490524, Predicted=0.50431, Error=0.013786
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:11:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:06 +0545)" (scheduled at 2026-03-30 22:11:51.881130+05:45)
+INFO:webapp:[M001] Tick #156 at 2025-05-14 23:00:00
+INFO:     127.0.0.1:34710 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7101 rows
+INFO:webapp:[M001] Model retrained (v26)
+INFO:webapp:[M001] True=0.435996, Predicted=0.501649, Error=0.065653
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:21 +0545)" (scheduled at 2026-03-30 22:12:06.881130+05:45)
+INFO:webapp:[M001] Tick #157 at 2025-05-15 00:00:00
+INFO:     127.0.0.1:53594 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.61683, Predicted=-97.106796, Error=97.723626
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:36 +0545)" (scheduled at 2026-03-30 22:12:21.881130+05:45)
+INFO:webapp:[M001] Tick #158 at 2025-05-15 01:00:00
+INFO:     127.0.0.1:34078 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.473984, Predicted=0.437137, Error=0.036847
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:51 +0545)" (scheduled at 2026-03-30 22:12:36.881130+05:45)
+INFO:webapp:[M001] Tick #159 at 2025-05-15 02:00:00
+INFO:     127.0.0.1:39692 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.38527, Predicted=0.437137, Error=0.051867
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:12:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:06 +0545)" (scheduled at 2026-03-30 22:12:51.881130+05:45)
+INFO:webapp:[M001] Tick #160 at 2025-05-15 03:00:00
+INFO:     127.0.0.1:57156 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.483167, Predicted=0.501841, Error=0.018674
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:21 +0545)" (scheduled at 2026-03-30 22:13:06.881130+05:45)
+INFO:webapp:[M001] Tick #161 at 2025-05-15 04:00:00
+INFO:     127.0.0.1:38392 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.536903, Predicted=0.501841, Error=0.035062
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:36 +0545)" (scheduled at 2026-03-30 22:13:21.881130+05:45)
+INFO:webapp:[M001] Tick #162 at 2025-05-15 05:00:00
+INFO:     127.0.0.1:57992 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7107 rows
+INFO:webapp:[M001] Model retrained (v27)
+INFO:webapp:[M001] True=0.501504, Predicted=0.501841, Error=0.000337
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:51 +0545)" (scheduled at 2026-03-30 22:13:36.881130+05:45)
+INFO:webapp:[M001] Tick #163 at 2025-05-15 06:00:00
+INFO:     127.0.0.1:36924 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.562663, Predicted=0.505913, Error=0.05675
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:13:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:06 +0545)" (scheduled at 2026-03-30 22:13:51.881130+05:45)
+INFO:webapp:[M001] Tick #164 at 2025-05-15 07:00:00
+INFO:     127.0.0.1:46866 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.584885, Predicted=0.505615, Error=0.07927
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:21 +0545)" (scheduled at 2026-03-30 22:14:06.881130+05:45)
+INFO:webapp:[M001] Tick #165 at 2025-05-15 08:00:00
+INFO:     127.0.0.1:50494 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.607734, Predicted=0.505012, Error=0.102722
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:36 +0545)" (scheduled at 2026-03-30 22:14:21.881130+05:45)
+INFO:webapp:[M001] Tick #166 at 2025-05-15 09:00:00
+INFO:     127.0.0.1:53062 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.47464, Predicted=0.504419, Error=0.029779
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:51 +0545)" (scheduled at 2026-03-30 22:14:36.881130+05:45)
+INFO:webapp:[M001] Tick #167 at 2025-05-15 10:00:00
+INFO:     127.0.0.1:39112 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.51054, Predicted=0.504419, Error=0.006121
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:14:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:06 +0545)" (scheduled at 2026-03-30 22:14:51.881130+05:45)
+INFO:webapp:[M001] Tick #168 at 2025-05-15 11:00:00
+INFO:     127.0.0.1:39316 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7113 rows
+INFO:webapp:[M001] Model retrained (v28)
+INFO:webapp:[M001] True=0.532981, Predicted=0.504419, Error=0.028562
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:21 +0545)" (scheduled at 2026-03-30 22:15:06.881130+05:45)
+INFO:webapp:[M001] Tick #169 at 2025-05-15 12:00:00
+INFO:     127.0.0.1:35888 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.477812, Predicted=0.528522, Error=0.05071
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:36 +0545)" (scheduled at 2026-03-30 22:15:21.881130+05:45)
+INFO:webapp:[M001] Tick #170 at 2025-05-15 13:00:00
+INFO:     127.0.0.1:46530 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.472499, Predicted=0.528522, Error=0.056023
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:51 +0545)" (scheduled at 2026-03-30 22:15:36.881130+05:45)
+INFO:webapp:[M001] Tick #171 at 2025-05-15 14:00:00
+INFO:     127.0.0.1:42096 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.437919, Predicted=0.528946, Error=0.091027
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:15:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:06 +0545)" (scheduled at 2026-03-30 22:15:51.881130+05:45)
+INFO:webapp:[M001] Tick #172 at 2025-05-15 15:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36158 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.387754, Predicted=0.528946, Error=0.141192
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:21 +0545)" (scheduled at 2026-03-30 22:16:06.881130+05:45)
+INFO:webapp:[M001] Tick #173 at 2025-05-15 16:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48246 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.385738, Predicted=0.528946, Error=0.143208
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:36 +0545)" (scheduled at 2026-03-30 22:16:21.881130+05:45)
+INFO:webapp:[M001] Tick #174 at 2025-05-15 17:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55742 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:Retraining model for M001...
+INFO:webapp:Model retrained for M001 with 7119 rows
+INFO:webapp:[M001] Model retrained (v29)
+INFO:webapp:[M001] True=0.51424, Predicted=0.529579, Error=0.015339
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:36 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:51 +0545)" (scheduled at 2026-03-30 22:16:36.881130+05:45)
+INFO:webapp:[M001] Tick #175 at 2025-05-15 18:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46964 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.687802, Predicted=0.514045, Error=0.173757
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:16:51 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:17:06 +0545)" (scheduled at 2026-03-30 22:16:51.881130+05:45)
+INFO:webapp:[M001] Tick #176 at 2025-05-15 19:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55364 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.706557, Predicted=0.514045, Error=0.192512
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:17:06 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:17:21 +0545)" (scheduled at 2026-03-30 22:17:06.881130+05:45)
+INFO:webapp:[M001] Tick #177 at 2025-05-15 20:00:00
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53480 - "POST /meter_update HTTP/1.1" 404 Not Found
+INFO:webapp:[M001] True=0.609211, Predicted=0.514045, Error=0.095166
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-30 22:17:21 +0545)" executed successfully
+Failed to send data to backend: {"detail":"Not Found"}
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1357628]
