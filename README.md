@@ -1,44 +1,69 @@
+
 # Energy Consumption Prediction Dashboard
 
-A real-time energy consumption prediction web application that uses machine learning to forecast electricity usage. Each user gets their own personalized XGBoost model that continuously learns and improves from actual consumption data.
+This project is a real-time web application for forecasting electricity usage using machine learning. Each user (meter) receives a personalized XGBoost model that adapts and improves as more consumption data is collected. The system features a simulator for generating data, automatic model retraining, and a user-friendly dashboard for monitoring predictions and actual usage.
+
+---
+
 
 ## Features
 
-- **Real-time Predictions**: Compare predicted vs actual energy consumption
-- **Per-user ML Models**: Each meter ID gets its own XGBoost model that diverges from the base model over time
-- **Automatic Retraining**: Models automatically retrain when enough new data is collected
-- **24-hour & Weekly Forecasts**: View predictions for the next 24 hours or full week
-- **Simulation Mode**: Demo mode simulates hourly data ticks every 15 seconds
+- **Real-time Predictions**: Instantly compare predicted and actual energy consumption
+- **Personalized ML Models**: Each meter ID has its own XGBoost model that evolves over time
+- **Automatic Retraining**: Models retrain automatically as new data is collected
+- **24-hour & Weekly Forecasts**: Visualize short- and long-term predictions
+- **Simulation Mode**: Demo mode simulates hourly data every 15 seconds for rapid testing
 
-## Architecture
+---
+
+
+## Project Architecture
 
 ```
-webappproject/
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
-├── simulator/                # Energy consumption simulator (Flask API)
+WebAppProject/
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+├── simulator/               # Data simulator (Flask API)
 │   ├── api.py               # Simulator API endpoint
-│   ├── model.pkl            # Base prediction model
 │   └── data.csv             # Historical data
-└── webapp/                   # Main web application (FastAPI)
+└── webapp/                  # Main web application (FastAPI)
     ├── app.py               # Application entry point
     ├── config.py            # Configuration settings
-    ├── features.py          # Feature engineering functions
-    ├── database.py          # SQLite database operations
+    ├── features.py          # Feature engineering
+    ├── database.py          # SQLite operations
     ├── models.py            # ML model management
     ├── sessions.py          # User session & scheduler
-    ├── routes.py            # API route handlers
-    ├── base/                # Base model and data
-    │   ├── model.pkl
-    │   └── data.csv
+    ├── routes.py            # API endpoints
+    ├── base/                # Base model/data
     ├── templates/           # HTML templates
-    │   └── index.html
-    ├── static/              # Static assets (CSS, JS)
     └── user_data/           # Per-user data storage
-        └── {meter_id}/
-            ├── model.pkl    # User's personalized model
-            └── consumption.db  # SQLite database
 ```
+
+---
+
+## Project Workflow
+
+```mermaid
+flowchart TD
+    A[User Login (meter_id)] --> B[User folder & DB initialized]
+    B --> C[Start Simulation Loop]
+    C --> D[Model predicts consumption]
+    D --> E[Simulator returns true value]
+    E --> F[Store data & log error]
+    F --> G{Enough new data?}
+    G -- Yes --> H[Retrain user model]
+    G -- No --> C
+    H --> C
+```
+
+### Step-by-step:
+1. **User Login**: User enters their meter ID. The system creates a dedicated folder and database for the user, copying the base model.
+2. **Initialization**: The user's database is seeded with historical data.
+3. **Simulation Loop**: On each tick (every 15s in demo), the user's model predicts consumption, the simulator provides the actual value, and both are stored.
+4. **Retraining**: After a set number of new data points, the user's model retrains on all accumulated data, personalizing predictions.
+5. **Continuous Learning**: The process repeats, with each user's model improving based on their unique consumption patterns.
+
+---
 
 ## Module Overview
 
@@ -162,17 +187,15 @@ The model uses 26 features for prediction:
 - lag_1, lag_2, lag_3
 - roll_mean_3, roll_mean_6, roll_mean_12
 
-## How It Works
 
-1. **Login**: User enters meter ID → system creates user folder with base model copy
-2. **Initialization**: SQLite DB is seeded with historical data
-3. **Simulation Loop** (every tick):
-   - User's model predicts consumption for current hour
-   - Simulator provides "true" consumption value
-   - Data is stored in user's database
-   - Prediction error is logged
-4. **Retraining**: After 6 new data points, model retrains on all accumulated data
-5. **Divergence**: Each user's model improves based on their specific consumption patterns
+## How the System Works
+
+- **Personalized Models**: Each user (meter) has a separate XGBoost model, initialized from a base model, and retrained as new data arrives.
+- **Real-time Feedback**: The dashboard displays both predicted and actual consumption, updating live as the simulator generates new data.
+- **Automatic Retraining**: When enough new data is collected, the user's model is retrained, allowing it to diverge and specialize for that user's consumption habits.
+- **Simulation Mode**: For demo/testing, the simulator generates new data every 15 seconds, mimicking real-world hourly updates.
+
+---
 
 ## Tech Stack
 
