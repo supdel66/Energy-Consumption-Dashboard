@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0f1117;
+            --card: #1a1d27;
+            --border: #2a2d3a;
+            --text: #e4e4e7;
+            --text-dim: #8b8d97;
+            --accent: #22d3ee;
+            --green: #4ade80;
+            --red: #f87171;
+            --yellow: #fbbf24;
+            --blue: #60a5fa;
+            --purple: #a78bfa;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* ── Login Screen ── */
+        #login-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 24px;
+        }
+
+        #login-screen h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        #login-screen p {
+            color: var(--text-dim);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-width: 360px;
+        }
+
+        .login-box label {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .login-box input {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 1.1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .login-box input:focus {
+            border-color: var(--accent);
+        }
+
+        .btn {
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover { opacity: 0.85; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--red);
+            border: 1px solid var(--red);
+        }
+
+        /* ── Dashboard ── */
+        #dashboard {
+            display: none;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .topbar h1 {
+            font-size: 1.4rem;
+            color: var(--accent);
+        }
+
+        .topbar .meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .status-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--green);
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* ── Cards Grid ── */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .card .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+            margin-bottom: 8px;
+        }
+
+        .card .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .card .unit {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            font-weight: 400;
+        }
+
+        .card .sub {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
+        .card.accent .value { color: var(--accent); }
+        .card.green .value { color: var(--green); }
+        .card.yellow .value { color: var(--yellow); }
+        .card.red .value { color: var(--red); }
+        .card.blue .value { color: var(--blue); }
+        .card.purple .value { color: var(--purple); }
+
+        /* ── Charts ── */
+        .charts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .chart-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .chart-box h3 {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .chart-box canvas {
+            width: 100% !important;
+            max-height: 300px;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* ── Log Table ── */
+        .log-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .log-box h3 {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .log-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .log-table th {
+            text-align: left;
+            padding: 8px 12px;
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--border);
+            font-weight: 500;
+        }
+
+        .log-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .log-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .error-low { color: var(--green); }
+        .error-med { color: var(--yellow); }
+        .error-high { color: var(--red); }
+
+        /* ── Loading ── */
+        .loader {
+            display: inline-block;
+            width: 16px; height: 16px;
+            border: 2px solid var(--border);
+            border-top: 2px solid var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .hidden { display: none !important; }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .charts { grid-template-columns: 1fr; }
+            .cards { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════ LOGIN SCREEN ═══════════════ -->
+<div id="login-screen">
+    <h1>⚡ Energy Dashboard</h1>
+    <p>Monitor your real-time energy consumption, predictions, and model performance</p>
+    <div class="login-box">
+        <label>Meter ID</label>
+        <input type="text" id="meter-input" placeholder="e.g. M001" autofocus>
+        <button class="btn" id="login-btn" onclick="doLogin()">Connect &amp; Start Monitoring</button>
+    </div>
+</div>
+
+<!-- ═══════════════ DASHBOARD ═══════════════ -->
+<div id="dashboard">
+    <!-- Top Bar -->
+    <div class="topbar">
+        <h1>⚡ Energy Dashboard — <span id="d-meter-id"></span></h1>
+        <div class="meta">
+            <span><span class="status-dot" id="status-dot"></span> <span id="d-status">Active</span></span>
+            <span>Sim Time: <strong id="d-sim-time">—</strong></span>
+            <span>Tick: <strong id="d-tick">0</strong></span>
+            <button class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem;" onclick="doLogout()">Disconnect</button>
+        </div>
+    </div>
+
+    <!-- Stat Cards -->
+    <div class="cards">
+        <div class="card accent">
+            <div class="label">Current Consumption</div>
+            <div class="value" id="c-true">—</div>
+            <div class="sub">True (from simulator)</div>
+        </div>
+        <div class="card purple">
+            <div class="label">Predicted</div>
+            <div class="value" id="c-predicted">—</div>
+            <div class="sub">Your model's prediction</div>
+        </div>
+        <div class="card green" id="error-card">
+            <div class="label">Prediction Error</div>
+            <div class="value" id="c-error">—</div>
+            <div class="sub">|true - predicted|</div>
+        </div>
+        <div class="card yellow">
+            <div class="label">Avg Error (MAE)</div>
+            <div class="value" id="c-mae">—</div>
+            <div class="sub">Since session start</div>
+        </div>
+        <div class="card blue">
+            <div class="label">Model Version</div>
+            <div class="value" id="c-model-ver">v0</div>
+            <div class="sub">Retrain: <span id="c-retrain-progress">0/6</span></div>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+        <div class="chart-box full-width">
+            <h3>True vs Predicted (Hourly)</h3>
+            <canvas id="chart-comparison"></canvas>
+        </div>
+        <div class="chart-box">
+            <h3>Next 24 Hours Forecast</h3>
+            <canvas id="chart-24h"></canvas>
+        </div>
+        <div class="chart-box">
+            <h3>Prediction Error Over Time</h3>
+            <canvas id="chart-error"></canvas>
+        </div>
+    </div>
+
+    <!-- Prediction Log -->
+    <div class="log-box">
+        <h3>Recent Prediction Log</h3>
+        <div style="max-height: 300px; overflow-y: auto;">
+            <table class="log-table">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>True (kWh)</th>
+                        <th>Predicted (kWh)</th>
+                        <th>Error</th>
+                    </tr>
+                </thead>
+                <tbody id="log-body"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ─── State ─────────────────────────────────
+    let meterId = null;
+    let refreshInterval = null;
+    let comparisonChart = null;
+    let forecast24Chart = null;
+    let errorChart = null;
+
+    const API = "";
+
+    // ─── Chart defaults ────────────────────────
+    Chart.defaults.color = "#8b8d97";
+    Chart.defaults.borderColor = "#2a2d3a";
+    Chart.defaults.font.family = "'Segoe UI', system-ui, sans-serif";
+
+    // ─── Login ─────────────────────────────────
+    document.getElementById("meter-input").addEventListener("keydown", e => {
+        if (e.key === "Enter") doLogin();
+    });
+
+    async function doLogin() {
+        const input = document.getElementById("meter-input").value.trim();
+        if (!input) return;
+
+        const btn = document.getElementById("login-btn");
+        btn.disabled = true;
+        btn.innerHTML = '<span class="loader"></span> Connecting...';
+
+        try {
+            const resp = await fetch(`${API}/api/login`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ meter_id: input }),
+            });
+            const data = await resp.json();
+
+            if (data.error) {
+                alert(data.error);
+                return;
+            }
+
+            meterId = input;
+            document.getElementById("login-screen").style.display = "none";
+            document.getElementById("dashboard").style.display = "block";
+            document.getElementById("d-meter-id").textContent = meterId;
+
+            initCharts();
+            refreshDashboard();
+
+            // Poll for updates
+            const pollMs = Math.max((data.tick_interval_seconds || 15) * 1000 / 3, 3000);
+            refreshInterval = setInterval(refreshDashboard, pollMs);
+
+        } catch (err) {
+            alert("Failed to connect. Make sure the server is running.\n" + err);
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = "Connect & Start Monitoring";
+        }
+    }
+
+    async function doLogout() {
+        if (!meterId) return;
+        clearInterval(refreshInterval);
+        try {
+            await fetch(`${API}/api/logout`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ meter_id: meterId }),
+            });
+        } catch (e) {}
+        meterId = null;
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("login-screen").style.display = "flex";
+    }
+
+    // ─── Dashboard refresh ─────────────────────
+    async function refreshDashboard() {
+        if (!meterId) return;
+
+        try {
+            const resp = await fetch(`${API}/api/dashboard/${meterId}`);
+            const d = await resp.json();
+
+            if (d.error) return;
+
+            // Update cards
+            document.getElementById("d-sim-time").textContent = formatTime(d.sim_time);
+            document.getElementById("d-tick").textContent = d.tick_count;
+            document.getElementById("d-status").textContent = d.status;
+
+            document.getElementById("c-true").innerHTML =
+                d.last_true_kwh != null ? d.last_true_kwh.toFixed(4) + ' <span class="unit">kWh</span>' : "—";
+            document.getElementById("c-predicted").innerHTML =
+                d.last_predicted_kwh != null ? d.last_predicted_kwh.toFixed(4) + ' <span class="unit">kWh</span>' : "—";
+
+            const errEl = document.getElementById("c-error");
+            const errCard = document.getElementById("error-card");
+            if (d.last_error != null) {
+                errEl.innerHTML = d.last_error.toFixed(6) + ' <span class="unit">kWh</span>';
+                errCard.className = d.last_error < 0.01 ? "card green" :
+                                    d.last_error < 0.05 ? "card yellow" : "card red";
+            } else {
+                errEl.textContent = "—";
+            }
+
+            document.getElementById("c-mae").innerHTML =
+                d.mae != null ? d.mae.toFixed(6) + ' <span class="unit">kWh</span>' : "—";
+            document.getElementById("c-model-ver").textContent = "v" + d.model_version;
+            document.getElementById("c-retrain-progress").textContent =
+                d.new_data_since_retrain + "/" + d.retrain_threshold;
+
+            // Update charts
+            updateComparisonChart(d.prediction_log);
+            updateForecast24Chart(d.predictions_24h);
+            updateErrorChart(d.prediction_log);
+            updateLogTable(d.prediction_log);
+
+        } catch (err) {
+            console.error("Dashboard refresh error:", err);
+        }
+    }
+
+    // ─── Charts ────────────────────────────────
+    function initCharts() {
+        const compCtx = document.getElementById("chart-comparison").getContext("2d");
+        comparisonChart = new Chart(compCtx, {
+            type: "line",
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: "True (kWh)",
+                        data: [],
+                        borderColor: "#22d3ee",
+                        backgroundColor: "rgba(34,211,238,0.1)",
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        fill: true,
+                        tension: 0.3,
+                    },
+                    {
+                        label: "Predicted (kWh)",
+                        data: [],
+                        borderColor: "#a78bfa",
+                        backgroundColor: "rgba(167,139,250,0.1)",
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        pointStyle: "triangle",
+                        fill: true,
+                        tension: 0.3,
+                    },
+                ],
+            },
+            options: {
+                responsive: false,
+                interaction: { intersect: false, mode: "index" },
+                scales: {
+                    x: { ticks: { maxTicksAuto: 12, maxRotation: 45 } },
+                    y: { title: { display: true, text: "kWh" },
+                        min: 0,
+                        max: 1.5
+                    }, // Assuming the typical range of the data},
+                },
+                plugins: { legend: { position: "top" } },
+            },
+        });
+
+        const fc24Ctx = document.getElementById("chart-24h").getContext("2d");
+        forecast24Chart = new Chart(fc24Ctx, {
+            type: "line",
+            data: {
+                labels: [],
+                datasets: [{
+                    label: "Forecast (kWh)",
+                    data: [],
+                    borderColor: "#60a5fa",
+                    backgroundColor: "rgba(96,165,250,0.15)",
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                }],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { ticks: { maxTicksAuto: 8, maxRotation: 45 } },
+                    y: { title: { display: true, text: "kWh" } },
+                },
+            },
+        });
+
+        const errCtx = document.getElementById("chart-error").getContext("2d");
+        errorChart = new Chart(errCtx, {
+            type: "bar",
+            data: {
+                labels: [],
+                datasets: [{
+                    label: "Abs Error (kWh)",
+                    data: [],
+                    backgroundColor: [],
+                    borderRadius: 4,
+                }],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { ticks: { maxTicksAuto: 8, maxRotation: 45 } },
+                    y: { title: { display: true, text: "kWh" }, beginAtZero: true },
+                },
+            },
+        });
+    }
+
+    function updateComparisonChart(log) {
+        if (!log || log.length === 0) return;
+        comparisonChart.data.labels = log.map(p => formatTime(p.timestamp));
+        comparisonChart.data.datasets[0].data = log.map(p => p.true_kwh);
+        comparisonChart.data.datasets[1].data = log.map(p => p.predicted_kwh);
+        comparisonChart.update("none");
+    }
+
+    function updateForecast24Chart(preds) {
+        if (!preds || preds.length === 0) return;
+        forecast24Chart.data.labels = preds.map(p => formatTime(p.timestamp));
+        forecast24Chart.data.datasets[0].data = preds.map(p => p.predicted_kwh);
+        forecast24Chart.update("none");
+    }
+
+    function updateErrorChart(log) {
+        if (!log || log.length === 0) return;
+        const labels = log.map(p => formatTime(p.timestamp));
+        const errors = log.map(p => p.error || 0);
+        const colors = errors.map(e =>
+            e < 0.01 ? "#4ade80" : e < 0.05 ? "#fbbf24" : "#f87171"
+        );
+        errorChart.data.labels = labels;
+        errorChart.data.datasets[0].data = errors;
+        errorChart.data.datasets[0].backgroundColor = colors;
+        errorChart.update("none");
+    }
+
+    function updateLogTable(log) {
+        const tbody = document.getElementById("log-body");
+        if (!log || log.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:var(--text-dim)">Waiting for data...</td></tr>';
+            return;
+        }
+        const rows = [...log].reverse().slice(0, 30);
+        tbody.innerHTML = rows.map(p => {
+            const errClass = p.error == null ? "" :
+                p.error < 0.01 ? "error-low" :
+                p.error < 0.05 ? "error-med" : "error-high";
+            return `<tr>
+                <td>${formatTime(p.timestamp)}</td>
+                <td>${p.true_kwh != null ? p.true_kwh.toFixed(6) : "—"}</td>
+                <td>${p.predicted_kwh != null ? p.predicted_kwh.toFixed(6) : "—"}</td>
+                <td class="${errClass}">${p.error != null ? p.error.toFixed(6) : "—"}</td>
+            </tr>`;
+        }).join("");
+    }
+
+    // ─── Helpers ───────────────────────────────
+    function formatTime(ts) {
+        if (!ts) return "—";
+        // Show "Apr 11 00:00" style
+        const d = new Date(ts.replace(" ", "T"));
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        return `${months[d.getMonth()]} ${d.getDate()} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
+    }
+</script>
+</body>
+</html>
