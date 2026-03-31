@@ -1,0 +1,25 @@
+INFO:     Started server process [548282]
+INFO:     Waiting for application startup.
+INFO:apscheduler.scheduler:Scheduler started
+INFO:webapp:Scheduler started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:apscheduler.scheduler:Added job "hourly_tick" to job store "default"
+INFO:webapp:Started scheduler for M001 (every 15s)
+Error sending data to backend: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /meter_update (Caused by NewConnectionError("HTTPConnection(host='localhost', port=9000): Failed to establish a new connection: [Errno 111] Connection refused"))
+INFO:     127.0.0.1:36438 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36438 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:apscheduler.executors.default:Running job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-31 08:11:07 +0545)" (scheduled at 2026-03-31 08:11:07.908267+05:45)
+INFO:webapp:[M001] Tick #1 at 2025-05-30 06:00:00
+INFO:     127.0.0.1:36438 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:webapp:[M001] True=0.570889, Predicted=0.5413, Error=0.029589
+INFO:apscheduler.executors.default:Job "hourly_tick (trigger: interval[0:00:15], next run at: 2026-03-31 08:11:22 +0545)" executed successfully
+Error sending data to backend: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /meter_update (Caused by NewConnectionError("HTTPConnection(host='localhost', port=9000): Failed to establish a new connection: [Errno 111] Connection refused"))
+INFO:     127.0.0.1:36438 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36438 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36438 - "GET /api/dashboard/M001 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:apscheduler.scheduler:Scheduler has been shut down
+INFO:     Application shutdown complete.
+INFO:     Finished server process [548282]
