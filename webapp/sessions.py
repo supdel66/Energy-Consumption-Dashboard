@@ -260,7 +260,7 @@ def send_to_backend(meter_id: str):
     mae = avg_error  # Mean Absolute Error
     
     try:
-        resp = requests.post("http://localhost:8000/meter_update", json={
+        resp = requests.post("http://localhost:9000/meter_update", json={
             "meter_id": meter_id,
             #"sim_time": session["sim_time"], 
             #"tick_count": session["tick_count"], 
